@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="container">
+
+        <div id="header">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title> Timer </title>
+        <script src="main.js" type="text/javascript"> </script>
+    </head>
+        </div>
+
+        <div id="body">
+            <body>
+        <h1> Timer </h1>
+        <form name="options" action="" onsubmit="return validateForm()" method="post">
+            <fieldset>
+                <label>Activation delay:
+                    <input type="text" name="activation-delay" size="1" /> seconds <br> </label>
+                <label>Interval:
+                    <input type="text" name="interval-min" size="1" /> to
+                    <input type="text" name="interval-max" size="1" /> seconds </label>
+                <input type="submit" id="submit" class="button" alt="start" value="Start" />
+                <input type="reset" id="clear" class="button" alt="clear" value="Clear" />
+                <input type="button" id="reset" class="button" alt="reset" value="Reset" />
+            </fieldset>
+        </form>
+
+        <p id="display"> </p>
+        <h1 id="timer" class="hidden"> 00 . 000 </h1>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.js"> </script>
+        <script src="main.js"> </script>
+        <script src="stopwatch.js"> </script>
+            </body>
+        </div>
+    </div>
+</html>
